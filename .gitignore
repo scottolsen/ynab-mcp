@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Local MCP configuration (contains user-specific paths)
+.mcp.json
+
+# Build output
+dist/
+
+# Claude Code local settings (but keep commands/)
+.claude/*
+!.claude/commands/

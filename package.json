@@ -1,0 +1,33 @@
+{
+  "name": "ynab-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for YNAB credit card reconciliation",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "ynab",
+    "reconciliation",
+    "budgeting"
+  ],
+  "author": "Scott Olsen (https://github.com/scottolsen)",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "ynab": "^2.5.0",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
