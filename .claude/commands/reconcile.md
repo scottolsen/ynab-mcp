@@ -2,6 +2,8 @@
 
 Help me reconcile my credit card by entering transactions from screenshots.
 
+**Read `.claude/reconcile-local.md` first** for personal merchant mappings (gitignored).
+
 ## Instructions
 
 1. **Ask which account** to reconcile (e.g., "Prime (A)", "Venture X", "Scott Sapphire")
@@ -13,8 +15,7 @@ Help me reconcile my credit card by entering transactions from screenshots.
 3. **Extract and match transactions**:
    - Extract date, amount, and payee from credit card screenshots
    - Match Amazon charges to order details when screenshots provided
-   - For unmatched Amazon charges, use memo "????"
-   - Skip any charges that appear to be from my wife's Amazon account (no matching order)
+   - For unmatched Amazon charges (wife's account), use memo "????" and category "Clothing"
    - Include refunds (positive amounts) with memo "Refund ????"
 
 4. **Assign categories** based on item type:
@@ -45,4 +46,4 @@ Help me reconcile my credit card by entering transactions from screenshots.
   - Payee: "Payment: Checking"
   - Category: "Credit Card Payments: {account name}" (e.g., "Credit Card Payments: Freedom (A)")
   - Amount: **positive** (reduces the balance owed)
-- Check for duplicates - ask if any transactions might already exist
+- **Check for duplicates**: Always fetch uncleared transactions from YNAB first and skip any that are already entered
